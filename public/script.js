@@ -7,9 +7,13 @@ var lastPosition = 0;
 //     dia:"null"
 // };
 var funcionarioDados={};
-
 var year;
 var month;
+
+    function hide(){
+        let header = document.getElementById("header");
+        header.hidden = true;
+    }
 
     for(i = 1 ; i <= 31 ; i ++){
         let dias = document.createElement("div");
@@ -72,7 +76,8 @@ function consolelog(){
                 break;
             }
         }
-    var id = '012228789765';
+    var id = document.getElementById("inputText").value;
+    // '012228789765';
 
     let positionJump = 0;
     let getname = true;

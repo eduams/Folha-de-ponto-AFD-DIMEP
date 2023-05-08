@@ -6,14 +6,19 @@
     <title>title</title>
 </head>
 <body id="body">
-    <input type="text"
-    id="inputText" name="inputText"
-    accept="text/txt">
-    <input type="file"
-    id="inputFile" name="inputFile"
-    accept="text/txt">
- <button type="button" onclick="consolelog()">Enviar</button>
- <p id="output"></p>
+    <header id="header">
+        <h4>RS: </h4>
+        <input type="text"
+        id="inputText" name="inputText"
+        accept="text/txt">
+        <h4>Arquivo AFD: </h4>
+        <input type="file"
+        id="inputFile" name="inputFile"
+        accept="text/txt">
+        <button type="button" onclick="consolelog()">Enviar</button>
+    <p id="output"></p>
+    <h4 class="line" onclick="hide()">/\/\/\ESCONDER/\/\/\</h4>
+    </header>
     <div class="line">
         <h5>REGISTRO DE PONTO</h5>
     </div>
@@ -21,13 +26,13 @@
         <h5>Servidor: </h5>
         <h5 id="funcionario">[NOME]</h5>
         <h5>RG nº: </h5>
-        <h5>[NÚMERO]: </h5>
+        <h5>[NÚMERO]</h5>
     </div>
     <div class="line">
         <h5>Cargo/função: </h5>
         <h5>[CARGO]</h5>
         <h5>RS/PV nº: </h5>
-        <h5>[NÚMERO]: </h5>
+        <h5>[NÚMERO] </h5>
     </div>
     <div class="line">
         <h5>Jornada: </h5>
